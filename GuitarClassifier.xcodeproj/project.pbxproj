@@ -9,23 +9,23 @@
 /* Begin PBXBuildFile section */
 		9AF2E93E20C888470031FE59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF2E93D20C888470031FE59 /* AppDelegate.swift */; };
 		9AF2E94020C888470031FE59 /* Scene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9AF2E93F20C888470031FE59 /* Scene.sks */; };
-		9AF2E94220C888470031FE59 /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF2E94120C888470031FE59 /* Scene.swift */; };
 		9AF2E94420C888470031FE59 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF2E94320C888470031FE59 /* ViewController.swift */; };
 		9AF2E94720C888470031FE59 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AF2E94520C888470031FE59 /* Main.storyboard */; };
 		9AF2E94920C888470031FE59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AF2E94820C888470031FE59 /* Assets.xcassets */; };
 		9AF2E94C20C888470031FE59 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AF2E94A20C888470031FE59 /* LaunchScreen.storyboard */; };
+		9AF2E95420C888A60031FE59 /* Guitars.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 9AF2E95320C888A50031FE59 /* Guitars.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9AF2E93A20C888470031FE59 /* GuitarClassifier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuitarClassifier.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AF2E93D20C888470031FE59 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9AF2E93F20C888470031FE59 /* Scene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Scene.sks; sourceTree = "<group>"; };
-		9AF2E94120C888470031FE59 /* Scene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scene.swift; sourceTree = "<group>"; };
 		9AF2E94320C888470031FE59 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9AF2E94620C888470031FE59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9AF2E94820C888470031FE59 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9AF2E94B20C888470031FE59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9AF2E94D20C888470031FE59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9AF2E95320C888A50031FE59 /* Guitars.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Guitars.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,9 +58,9 @@
 		9AF2E93C20C888470031FE59 /* GuitarClassifier */ = {
 			isa = PBXGroup;
 			children = (
+				9AF2E95320C888A50031FE59 /* Guitars.mlmodel */,
 				9AF2E93D20C888470031FE59 /* AppDelegate.swift */,
 				9AF2E93F20C888470031FE59 /* Scene.sks */,
-				9AF2E94120C888470031FE59 /* Scene.swift */,
 				9AF2E94320C888470031FE59 /* ViewController.swift */,
 				9AF2E94520C888470031FE59 /* Main.storyboard */,
 				9AF2E94820C888470031FE59 /* Assets.xcassets */,
@@ -144,7 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9AF2E94420C888470031FE59 /* ViewController.swift in Sources */,
-				9AF2E94220C888470031FE59 /* Scene.swift in Sources */,
+				9AF2E95420C888A60031FE59 /* Guitars.mlmodel in Sources */,
 				9AF2E93E20C888470031FE59 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,7 +283,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X5T3PF29C8;
 				INFOPLIST_FILE = GuitarClassifier/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.johnottenlips.guitarclassifier.GuitarClassifier;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -297,7 +299,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X5T3PF29C8;
 				INFOPLIST_FILE = GuitarClassifier/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.johnottenlips.guitarclassifier.GuitarClassifier;
 				PRODUCT_NAME = "$(TARGET_NAME)";
