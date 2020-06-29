@@ -1,20 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A278a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tXr-a1-R10">
             <objects>
-                <viewController id="BV1-FR-VrT" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <arskView key="view" contentMode="scaleToFill" id="EO5-fy-WZq">
+                <viewController id="BV1-FR-VrT" customClass="ViewController" customModule="GuitarClassifier" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="b0w-wP-two">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    </arskView>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ai4-PS-XW9">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </arscnView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UKT-4T-35t">
+                                <rect key="frame" x="118" y="519" width="139" height="30"/>
+                                <state key="normal" title="What Guitar is This?"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ctS-4Q-CQj" firstAttribute="trailing" secondItem="ai4-PS-XW9" secondAttribute="trailing" id="8cW-Pu-eFV"/>
+                            <constraint firstItem="ctS-4Q-CQj" firstAttribute="bottom" secondItem="UKT-4T-35t" secondAttribute="bottom" constant="118" id="AdY-8D-hEX"/>
+                            <constraint firstAttribute="bottom" secondItem="ai4-PS-XW9" secondAttribute="bottom" id="PXa-PN-2aw"/>
+                            <constraint firstItem="ai4-PS-XW9" firstAttribute="leading" secondItem="ctS-4Q-CQj" secondAttribute="leading" id="Pek-EO-iZo"/>
+                            <constraint firstItem="ai4-PS-XW9" firstAttribute="top" secondItem="ctS-4Q-CQj" secondAttribute="top" id="aIK-gq-wUJ"/>
+                            <constraint firstItem="ctS-4Q-CQj" firstAttribute="trailing" secondItem="UKT-4T-35t" secondAttribute="trailing" constant="118" id="p6I-uo-8aM"/>
+                            <constraint firstItem="UKT-4T-35t" firstAttribute="leading" secondItem="ctS-4Q-CQj" secondAttribute="leading" constant="118" id="ygz-YD-guY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ctS-4Q-CQj"/>
+                    </view>
                     <connections>
-                        <outlet property="sceneView" destination="EO5-fy-WZq" id="YuC-8q-ovz"/>
+                        <outlet property="sceneView" destination="ai4-PS-XW9" id="i1f-Cw-oTY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
